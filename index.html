@@ -27,6 +27,10 @@
                 top: -50%;
             }
         }
+
+        .ctaSection {
+            background-size: 100% 100%;
+        }
     </style>
 </head>
 
@@ -184,7 +188,7 @@
 
                     <div class="flex items-center space-x-4">
                         <button
-                            class="bg-lightBlue text-white py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-300">Sing
+                            class="bg-lightBlue text-white py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-300">Sign
                             Up Now
                             <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-2 inline">
                                 <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
@@ -906,118 +910,167 @@
     <!-- Testimonial Section -->
 
     <section>
-        <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
-          <img
-            src="assets/feature-section1-dottedrows.png"
-            class="hidden  absolute w-[200px] -z-[1] top-[8rem] left-[2rem]"
-          />
-          <h2
-            class="font-mullish font-extrabold text-2xl text-center text-deepBlueHead"
-          >
-            <span>An Experience</span>
-            <br />
-            <span>People Love to Talk About</span>
-          </h2>
-          <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
-          <button
-            class="w-[36px] h-[36px]  bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 -translate-y-1/2 grid place-items-center"
-          >
-            <div
-              class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center"
-            >
-              <i
-                data-feather="chevron-left"
-                class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"
-              ></i>
+        <div class="w-11/12 max-w-[1080px] mx-auto relative py-20">
+            <img src="assets/feature-section1-dottedrows.png"
+                class="hidden  absolute w-[200px] -z-[1] top-[8rem] left-[2rem]" />
+            <h2 class="font-mullish font-extrabold text-2xl text-center text-deepBlueHead">
+                <span>An Experience</span>
+                <br />
+                <span>People Love to Talk About</span>
+            </h2>
+            <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+            <button
+                class="w-[36px] h-[36px]  bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 -translate-y-1/2 grid place-items-center">
+                <div class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center">
+                    <i data-feather="chevron-left" class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"></i>
+                </div>
+            </button>
+            <button
+                class="w-[36px] h-[36px]  bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 -translate-y-1/2 grid place-items-center">
+                <div class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center">
+                    <i data-feather="chevron-right" class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"></i>
+                </div>
+            </button>
+            <div class="max-w-[960px] mx-auto flex flex-col xl:flex-row items-center xl:space-x-[10rem] my-20">
+                <img src="/assets/testimonial.jpg" width="320px" height="320px" loading="lazy"
+                    class="object-cover rounded-xl w-[250px] h-[250px] md:w-[320px] md:h-[320px]" />
+                <!-- small screens -->
+                <div class="xl:hidden mt-4">
+                    <p class="font-mullish font-extrabold text-2xl text-center">
+                        Lorem Ipsum
+                    </p>
+                    <p class="font-mullish font-medium text-center my-2">
+                        CEO, XYZ Engineering Company
+                    </p>
+                    <img src="assets/fake-company-logo.png" width="80" height="40" class="object-cover mx-auto" />
+                    <img src="/assets/quotes.svg" class="w-[35px] h-[40px] -mb-2" />
+                    <p class="font-mullish text-3xl font-extralight max-w-[300px]">
+                        Readymade Closed Wallet Solution For Quick Refunds
+                    </p>
+                    <button class="italic underline text-sm text-grayText">
+                        Learn More
+                    </button>
+                </div>
+                <!-- large screens -->
+                <div class="hidden xl:block max-w-[400px]">
+                    <img src="/assets/quotes.svg" class="w-[35px] h-[40px] -mb-2" />
+                    <p class="font-mullish text-3xl font-extralight">
+                        Readymade Closed Wallet Solution For Quick Refunds
+                    </p>
+                    <button class="italic underline text-sm text-grayText">
+                        Learn More
+                    </button>
+                    <p class="font-mullish font-extrabold text-2xl">Lorem Ipsum</p>
+                    <p class="font-mullish font-medium">
+                        CEO, XYZ Engineering Company
+                    </p>
+                    <img src="assets/fake-company-logo.png" width="80" height="40" class="object-cover" />
+                </div>
             </div>
-          </button>
-          <button
-            class="w-[36px] h-[36px]  bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 -translate-y-1/2 grid place-items-center"
-          >
-            <div
-              class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center"
-            >
-              <i
-                data-feather="chevron-right"
-                class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400"
-              ></i>
+            <div class="hidden lg:flex items-start mx-auto w-max space-x-2">
+                <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+                <div class="w-[10px] h-[10px] bg-lightBlue300 rounded-full cursor-pointer"></div>
+                <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+                <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+                <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+                <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
             </div>
-          </button>
-          <div
-            class="max-w-[960px] mx-auto flex flex-col xl:flex-row items-center xl:space-x-[10rem] my-20"
-          >
-            <img
-              src="/assets/testimonial.jpg"
-              width="320px"
-              height="320px"
-              loading="lazy"
-              class="object-cover rounded-xl w-[250px] h-[250px] md:w-[320px] md:h-[320px]"
-            />
-            <!-- small screens -->
-            <div class="xl:hidden mt-4">
-              <p class="font-mullish font-extrabold text-2xl text-center">
-                Lorem Ipsum
-              </p>
-              <p class="font-mullish font-medium text-center my-2">
-                CEO, XYZ Engineering Company
-              </p>
-              <img
-                src="assets/fake-company-logo.png"
-                width="80"
-                height="40"
-                class="object-cover mx-auto"
-              />
-              <img src="/assets/quotes.svg" class="w-[35px] h-[40px] -mb-2" />
-              <p class="font-mullish text-3xl font-extralight max-w-[300px]">
-                Readymade Closed Wallet Solution For Quick Refunds
-              </p>
-              <button class="italic underline text-sm text-grayText">
-                Learn More
-              </button>
-            </div>
-            <!-- large screens -->
-            <div class="hidden xl:block max-w-[400px]">
-              <img src="/assets/quotes.svg" class="w-[35px] h-[40px] -mb-2" />
-              <p class="font-mullish text-3xl font-extralight">
-                Readymade Closed Wallet Solution For Quick Refunds
-              </p>
-              <button class="italic underline text-sm text-grayText">
-                Learn More
-              </button>
-              <p class="font-mullish font-extrabold text-2xl">Lorem Ipsum</p>
-              <p class="font-mullish font-medium">
-                CEO, XYZ Engineering Company
-              </p>
-              <img
-                src="assets/fake-company-logo.png"
-                width="80"
-                height="40"
-                class="object-cover"
-              />
-            </div>
-          </div>
-          <div class="hidden lg:flex items-start mx-auto w-max space-x-2">
-            <div
-              class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
-            ></div>
-            <div
-              class="w-[10px] h-[10px] bg-lightBlue300 rounded-full cursor-pointer"
-            ></div>
-            <div
-              class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
-            ></div>
-            <div
-              class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
-            ></div>
-            <div
-              class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
-            ></div>
-            <div
-              class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"
-            ></div>
-          </div>
         </div>
-      </section>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[url(./assets/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[450px]">
+        <!-- Main content box -->
+        <div class="w-11/12 max-w-[1080px] relative flex flex-row  justify-between space-x-20 mx-auto pt-16">
+            <!-- left part -->
+            <div class="flex flex-col gap-5 mt-9 max-w-[600px]">
+                <h2 class="font-mullish font-bold text-2xl text-white">
+                    Supercharge your business with Razorpay</h2>
+                <div class="w-6 h-1 bg-greenLight"></div>
+                <p class="font-mullish   text-white">Sign up now to experience the future of payments and offer<br />
+                    your
+                    customers the best checkout experience.</p>
+                <ul class="flex flex-row gap-x-11 gap-y-3 text-white flex-wrap">
+                    <li class="font-mullish text-white flex flex-row">
+
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Quick Onboarding</span>
+                    </li>
+                    <li class="font-mullish text-white flex flex-row">
+
+
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Access to entire product suite</span>
+                    </li>
+                    <li class="font-mullish text-white flex flex-row">
+
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>API access</span>
+                    </li>
+                    <li class="font-mullish text-white flex flex-row">
+
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>24x7 support</span>
+                    </li>
+
+                </ul>
+                <button
+                    class="bg-white text-lightBlue py-3 px-[18px] rounded-md font-mullish font-bold hover: transition-all duration-300 self-start">Sign
+                    Up
+                    <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-2 inline">
+                        <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-14">
+                <!-- Right img -->
+                <img src="./assets/ctaImg.svg" alt="" width="240px" height="281px">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full relative">
+        <div class="w-11/12 max-w-[1080px] mx-auto relative py-20">
+            <!-- First Column -->
+            <div class="flex flex-col max-w-[260px]">
+                <img src="./assets/logo-dark.svg" alt="" height="100px" width="100px">
+
+                <p class="font-mullish text-sm opacity-80">Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p><br>
+                <p class="font-mullish text-sm opacity-80">RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p><br>
+                <p class="font-mullish text-sm opacity-80">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p><br>
+                <p class="font-mullish text-[10px] opacity-80">Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered account is provided by our partner bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p><br>
+
+                <h3 class="font-mullish text-base font-bold uppercase text-gray2">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <form class="relative bg-white w-[260px] mt-2 mb-4">
+                    <input type="text" placeholder="Your email address" class="pr-16 border-gray-300 outline-lightBlue rounded-sm focus:outline-lightBlue placeholder:text-sm py-2 px-4 transition-all duration-200" >
+                    <!-- Button -->
+                    <!-- <button
+                    class="py-3 px-4 font-mullish text-lightBlue300 text-sm font-bold bg-white rounded-sm  hover:text-lightBlue500 transition-all duration-300">Sign
+                    Up
+                    <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-2 inline">
+                        <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </svg>
+                </button> -->
+                <button class="h-[90%] bg-white absolute right-[1.5px] top-1/2 -translate-y-1/2 z-10 font-mullish text-sm font-bold text-lightBlue300 flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200">
+                    Subscribe
+                    <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+                      <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                    </svg>
+                  </button>
+                </form>
+                <!-- Bottom image -->
+                <div class="flex flex-row items-start">
+                    <img src="./assets/footer-certificate-1.png" alt="" 
+                    width="92px" height="40px">
+                    <img src="./assets/footer-certificate-2.jpg" alt=""
+                    width="122px" height="80px">
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         feather.replace()
     </script>
